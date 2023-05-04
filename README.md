@@ -7,7 +7,7 @@ de jason web token. Permitiendo de esta manera realizar ciertas operaciones CRUD
 <h2> Si quieres ver todo el proceso de creación puedes chequear el codigo en este repositorio, o bien puedes hacer clic en la imagen central  y esta te dirrecionará directamente a la lista de reproducción de youtube que he creado.</h2>
 <br>  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-<a href="https://www.youtube.com/playlist?list=PLQMlzO7aFsGZPkqT7__KRXtQN2PeQ777F" target="_blank" rel="noreferrer"> <img src="https://i.postimg.cc/FspqmNd8/Spring-Security-Jwt.jpg(https://postimg.cc/tY1DN0zN)" alt="lista youtube"/> </a> <br>  <br>  <br>  
+<a href="https://www.youtube.com/playlist?list=PLQMlzO7aFsGZPkqT7__KRXtQN2PeQ777F"> <img src="https://i.postimg.cc/FspqmNd8/Spring-Security-Jwt.jpg(https://postimg.cc/tY1DN0zN" target="_blank" rel="noreferrer" alt="lista youtube"/> </a> <br>  <br>  <br>  
 
 <h2> Si por el contrario deseas ver solo el resultado final, haz click en el enlace de abajo y este te direccionará a un video donde enseño el proyecto concluido </h2>   
 
