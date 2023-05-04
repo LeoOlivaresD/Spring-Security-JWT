@@ -3,6 +3,7 @@ package cl.javadevs.springsecurityjwt.security;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.http.HttpMethod;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.config.annotation.authentication.configuration.AuthenticationConfiguration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
@@ -57,6 +58,11 @@ public class SecurityConfig {
                 .and()
                 .authorizeHttpRequests() //Toda petición http debe ser autorizada
                 .requestMatchers("/api/auth/**").permitAll()
+                .requestMatchers(HttpMethod.POST, "/api/celular/crear").hasAuthority("ADMIN")
+                .requestMatchers(HttpMethod.GET,"/api/celular/listar").hasAnyAuthority("ADMIN" , "USER")
+                .requestMatchers(HttpMethod.GET,"/api/celular/listarId/**").hasAnyAuthority("ADMIN" , "USER")
+                .requestMatchers(HttpMethod.DELETE,"/api/celular/eliminar/**").hasAuthority("ADMIN")
+                .requestMatchers(HttpMethod.PUT, "/api/celular/actualizar").hasAuthority("ADMIN")
                 .anyRequest().authenticated()
                 .and()
                 .httpBasic();
