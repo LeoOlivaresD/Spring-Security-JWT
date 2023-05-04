@@ -53,7 +53,7 @@ public class RestControllerAuth {
         Roles roles = rolesRepository.findByName("USER").get();
         usuarios.setRoles(Collections.singletonList(roles));
         usuariosRepository.save(usuarios);
-        return new ResponseEntity<>("Registro de usuario existoso", HttpStatus.OK);
+        return new ResponseEntity<>("Registro de usuario exitoso", HttpStatus.OK);
     }
 
     //Método para poder guardar usuarios de tipo ADMIN
@@ -68,7 +68,7 @@ public class RestControllerAuth {
         Roles roles = rolesRepository.findByName("ADMIN").get();
         usuarios.setRoles(Collections.singletonList(roles));
         usuariosRepository.save(usuarios);
-        return new ResponseEntity<>("Registro de usuario existoso", HttpStatus.OK);
+        return new ResponseEntity<>("Registro de admin exitoso", HttpStatus.OK);
     }
 
     //Método para poder logear un usuario y obtener un token
